@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block  body %}
+  <div class="row">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <form method="post" novalidate  enctype="multipart/form-data">
+        {% csrf_token %}
+        {% include 'includes/form.html' %}
+        <h1>{% trans 'Do you want to delete the driver' %} "{{object.first_name}}" ? </h1>
+        <h4><button type="submit" class="btn header-btn">{% trans 'Yes ' %} </button>
+        <button type="submit" class="btn header-btn"><a href='../'>{% trans 'Cancel' %}</a></button>
+        </h4>
+      </form>
+    </div>
+  </div>
+{% endblock  %}

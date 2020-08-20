@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load thumbnail %}
+{% load i18n %}
+
+{% block body %}
+ 
+        <!--? Categories Area Start -->
+         
+                    <div class="container categories-area section-padding20">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Section Tittle -->
+                                <div class="section-tittle text-center mb-30">
+                                    <span>{{auto_roof.first_name}}</span>
+                                    <h2>{% trans 'This is the details for this auto_roof' %} </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-12 col-md-6 col-sm-6">
+                                <div class="single-cat text-center mb-50">
+                                    <div class="cat-icon">
+                                        <span class="flaticon-plane"></span>
+                                    </div>
+                                    <div class="cat-cap">  
+                        
+                                        <div class="single-blog col-lg-12 col-md-">
+                                                    
+                                            <h3>
+                                                {{auto_roof.city}}
+                                            </h3>
+                                            {% if auto_roof.image %}
+                                                 {% thumbnail auto_roof.image "300x400" crop="center" as im %}
+                                                    <img class="f-img img-fluid mx-auto" src="{{ im.url}}" width="{{ im.width }}" height="{{ im.height }}">
+                                                 {% empty %}
+                                                    <p>{% trans 'No image' %}</p>
+                                                 {% endthumbnail %}
+                                            {% else %}
+                                                <img class="f-img img-fluid mx-auto" src="{% static 'img/logo.png' %} " alt="">
+                                            {% endif %}
+                                            
+                                                <h4>
+                                                    {{auto_roof.first_name}}  {{auto_roof.last_name}}
+                                                </h4>
+                                                <h4>
+                                                    {{auto_roof.phone_number}}
+                                                </h4>
+                                                <h4>
+                                                    {{auto_roof.location}}
+                                                </h4>
+                                                
+                                                
+                                        </div>
+                                            {% if user.is_authenticated and auto_roof.created_by == user %}
+                                            <h4>
+                                                <button type="submit" class="btn header-btn"><a href="{% url 'auto_roof:auto_roof_update' auto_roof.pk %}">{% trans 'Update' %} </a></button>
+                                                <button type="submit" class="btn header-btn"><a href="{% url 'auto_roof:auto_roof_delete' auto_roof.pk %}">{% trans 'Delete' %} </a></button>
+                                                
+                                            </h4>
+                                            {% endif %}        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+         
+        <!-- Categories Area End -->
+       
+                     
+
+{% endblock  %}  

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+
+
+{% block body %}
+  
+  <div class="alert alert-success" role="alert">
+    <strong>{% trans 'Success!' %}</strong> {% trans 'Your account details has been changed!' %}
+  </div>
+  <a href="{% url 'service:index' %}" class="btn header-btn">{% trans 'Return to home page' %}</a>
+{% endblock %}

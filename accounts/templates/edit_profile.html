@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+    
+      <form method="post"  novalidate  enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form user_form %}
+        {% bootstrap_form profile_form %}
+        <button type="submit" class="btn header-btn">{% trans 'Save changes' %}</button>
+      </form>
+    
+    </div>
+  </div>
+{% endblock  %}

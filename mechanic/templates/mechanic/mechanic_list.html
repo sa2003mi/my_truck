@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load thumbnail %}
+{% load i18n %}
+
+
+
+{% block body %}
+ 
+        <!--? Categories Area Start -->
+                            <aside class="single_sidebar_widget search_widget">
+                                <form action="{% url 'mechanic:mechanic_list' %}">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <input type="text" name='q' class="form-control" placeholder='Search Keyword'
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Search Keyword'">
+                                            <div class="input-group-append">
+                                                <button class="btns" type="button"><i class="ti-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit" value='{{ request.GET.q }}'>{% trans 'Search' %}</button>
+                                </form>
+                            </aside>
+                       
+                    <div class="container categories-area section-padding20">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Section Tittle -->
+                                <div class="section-tittle text-center mb-30">
+                                    <span>{% trans 'Our Mechanic' %}</span>
+                                    <h2>{% trans 'Select the mechanic to show the details' %} </h2>
+                                    {% if user.is_authenticated %}
+                                <button type="submit" class="btn header-btn"><a href="{% url 'mechanic:mechanic_create' %}">{% trans 'Add new mechanic' %} </a></button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">  
+                         
+                            {% for mechanic in  mechanic %}
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-cat text-center mb-50">
+                                        <div class="cat-icon">
+                                            <span class="flaticon-plane"></span>
+                                        </div>
+                                        <div class="">  
+                                            <h3>
+                                                {{mechanic.city}}
+                                            </h3>
+                                            {% if mechanic.image %}
+                                                {% thumbnail mechanic.image "300x400" crop="center" as im %}
+                                                    <img class="f-img img-fluid mx-auto" src="{{ im.url}}" width="{{ im.width }}" height="{{ im.height }}">
+                                                {% empty %}
+                                                    <p>{% trans 'No image' %}</p>
+                                                {% endthumbnail %}
+                                            {% else %}
+                                                <img class="f-img img-fluid mx-auto" src="{% static 'img/logo.png' %} " alt="">
+                                            {% endif %}
+                                            <h4>
+                                                 <button type="submit" class="button button-contactForm boxed-btn"><a href="{% url 'mechanic:mechanic_detail' mechanic.pk  %}">{{mechanic.first_name}}</a></button>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            
+                        </div>
+                    </div>
+         
+        <!-- Categories Area End -->
+       
+    {% include 'includes/pagination.html' %}                 
+
+{% endblock  %}  

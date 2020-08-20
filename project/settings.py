@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+
+from django.utils.translation import ugettext_lazy as _
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -37,11 +40,28 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'location_field.apps.DefaultConfig',
+    'django.contrib.humanize',
+    'widget_tweaks',
+    'sorl.thumbnail',
+    'bootstrap4',
+    'mapbox_location_field',
+
+    'driver',
+    'service',
+    'mechanic',
+    'accounts',
+    'auto_roof',
+    'spare_parts',
+    'old_parts',
+    'contact',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -54,7 +74,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,8 +95,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME':  'my_truck',
+        'USER': 'postgres',
+        'PASSWORD': '9950786',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
@@ -104,6 +128,106 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+LANGUAGES = [
+    ('af', _('Afrikaans')),
+    ('ar', _('Arabic')),
+    ('ar-dz', _('Algerian Arabic')),
+    ('ast', _('Asturian')),
+    ('az', _('Azerbaijani')),
+    ('bg', _('Bulgarian')),
+    ('be', _('Belarusian')),
+    ('bn', _('Bengali')),
+    ('br', _('Breton')),
+    ('bs', _('Bosnian')),
+    ('ca', _('Catalan')),
+    ('cs', _('Czech')),
+    ('cy', _('Welsh')),
+    ('da', _('Danish')),
+    ('de', _('German')),
+    ('dsb', _('Lower Sorbian')),
+    ('el', _('Greek')),
+    ('en', _('English')),
+    ('en-au', _('Australian English')),
+    ('en-gb', _('British English')),
+    ('eo', _('Esperanto')),
+    ('es', _('Spanish')),
+    ('es-ar', _('Argentinian Spanish')),
+    ('es-co', _('Colombian Spanish')),
+    ('es-mx', _('Mexican Spanish')),
+    ('es-ni', _('Nicaraguan Spanish')),
+    ('es-ve', _('Venezuelan Spanish')),
+    ('et', _('Estonian')),
+    ('eu', _('Basque')),
+    ('fa', _('Persian')),
+    ('fi', _('Finnish')),
+    ('fr', _('French')),
+    ('fy', _('Frisian')),
+    ('ga', _('Irish')),
+    ('gd', _('Scottish Gaelic')),
+    ('gl', _('Galician')),
+    ('he', _('Hebrew')),
+    ('hi', _('Hindi')),
+    ('hr', _('Croatian')),
+    ('hsb', _('Upper Sorbian')),
+    ('hu', _('Hungarian')),
+    ('hy', _('Armenian')),
+    ('ia', _('Interlingua')),
+    ('id', _('Indonesian')),
+    ('ig', _('Igbo')),
+    ('io', _('Ido')),
+    ('is', _('Icelandic')),
+    ('it', _('Italian')),
+    ('ja', _('Japanese')),
+    ('ka', _('Georgian')),
+    ('kab', _('Kabyle')),
+    ('kk', _('Kazakh')),
+    ('km', _('Khmer')),
+    ('kn', _('Kannada')),
+    ('ko', _('Korean')),
+    ('ky', _('Kyrgyz')),
+    ('lb', _('Luxembourgish')),
+    ('lt', _('Lithuanian')),
+    ('lv', _('Latvian')),
+    ('mk', _('Macedonian')),
+    ('ml', _('Malayalam')),
+    ('mn', _('Mongolian')),
+    ('mr', _('Marathi')),
+    ('my', _('Burmese')),
+    ('nb', _('Norwegian Bokmål')),
+    ('ne', _('Nepali')),
+    ('nl', _('Dutch')),
+    ('nn', _('Norwegian Nynorsk')),
+    ('os', _('Ossetic')),
+    ('pa', _('Punjabi')),
+    ('pl', _('Polish')),
+    ('pt', _('Portuguese')),
+    ('pt-br', _('Brazilian Portuguese')),
+    ('ro', _('Romanian')),
+    ('ru', _('Russian')),
+    ('sk', _('Slovak')),
+    ('sl', _('Slovenian')),
+    ('sq', _('Albanian')),
+    ('sr', _('Serbian')),
+    ('sr-latn', _('Serbian Latin')),
+    ('sv', _('Swedish')),
+    ('sw', _('Swahili')),
+    ('ta', _('Tamil')),
+    ('te', _('Telugu')),
+    ('tg', _('Tajik')),
+    ('th', _('Thai')),
+    ('tk', _('Turkmen')),
+    ('tr', _('Turkish')),
+    ('tt', _('Tatar')),
+    ('udm', _('Udmurt')),
+    ('uk', _('Ukrainian')),
+    ('ur', _('Urdu')),
+    ('uz', _('Uzbek')),
+    ('vi', _('Vietnamese')),
+    ('zh-hans', _('Simplified Chinese')),
+    ('zh-hant', _('Traditional Chinese')),
+]
+LANGUAGES_BIDI = ["he", "ar", "ar-dz", "fa", "ur"]
+
 
 TIME_ZONE = 'UTC'
 
@@ -113,8 +237,67 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOCALE_PATHS = (os.path.join(BASE_DIR,'locale'),)
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    '/var/www/static/',
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+LOCATION_FIELD_PATH = STATIC_URL + 'location_field'
+
+MAPBOX_KEY = 'pk.eyJ1Ijoic2EyMDAzbWkiLCJhIjoiY2tjc243ank1MDF5dTJ6cGJxcmJhdGRxbCJ9.5_aFMS57P3riK4uIwiLukg'
+
+LOCATION_FIELD = {
+    'map.provider': 'mapbox', # choose your map provider her
+    'map.zoom': 13,
+
+    'search.provider': 'google',#choose your serch provider her
+    'search.suffix': '',
+
+    # Google
+    'provider.google.api': '//maps.google.com/maps/api/js?sensor=false',
+    'provider.google.api_key': 'AIzaSyCDaLaBehGccn5XONEhg9ljZC6em4sFjfQ',
+    'provider.google.api_libraries': '',
+    'provider.google.map.type': 'ROADMAP',
+
+    # Mapbox
+    'provider.mapbox.access_token': 'pk.eyJ1Ijoic2EyMDAzbWkiLCJhIjoiY2tjdTNkajQyMDBuMTJ6bzFnaGcxMTRqNSJ9.i5QVvm8cUNl6w1m1SR-RiQ',
+    'provider.mapbox.max_zoom': 18,
+    'provider.mapbox.id': 'mapbox.streets',
+
+    # OpenStreetMap
+    'provider.openstreetmap.max_zoom': 18,
+
+    # misc
+    'resources.root_path': LOCATION_FIELD_PATH,
+    'resources.media': {
+        'js': (
+            LOCATION_FIELD_PATH + '/js/form.js',
+        ),
+    },
+}
+
+
+LOGOUT_REDIRECT_URL = 'service:index'
+LOGIN_REDIRECT_URL = 'service:index'
+LOGIN_URL = 'login'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sa2003mi@gmail.com'
+EMAIL_HOST_PASSWORD = 'rmuwzugjyiamnqej'
+EMAIL_USE_TLS = True
+EMAIL_PORT = '587'
+

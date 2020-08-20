@@ -1,0 +1,784 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-17 17:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\accounts\templates\change_password.html:12
+#: .\accounts\templates\edit_profile.html:15
+#: .\accounts\templates\my_account.html:13
+msgid "Save changes"
+msgstr "حغظ"
+
+#: .\accounts\templates\includes\pagination.html:7
+#: .\accounts\templates\includes\pagination.html:11
+msgid "Previous"
+msgstr "السابق"
+
+#: .\accounts\templates\includes\pagination.html:20
+msgid "(current)"
+msgstr "الحالي"
+
+#: .\accounts\templates\includes\pagination.html:32
+#: .\accounts\templates\includes\pagination.html:36
+msgid "Next"
+msgstr "التالي"
+
+#: .\accounts\templates\login.html:15 .\accounts\templates\signup.html:15
+#: .\service\templates\service\service_list.html:15 .\templates\base.html:13
+msgid "My Truck"
+msgstr "شاحنتي"
+
+#: .\accounts\templates\login.html:21 .\accounts\templates\login.html:26
+msgid "Login"
+msgstr "الدخول"
+
+#: .\accounts\templates\login.html:30
+msgid "Create a new account?"
+msgstr "إنشاء حساب جديد"
+
+#: .\accounts\templates\login.html:30 .\accounts\templates\signup.html:21
+#: .\templates\base.html:112
+msgid "Sign up"
+msgstr "التسجيل"
+
+#: .\accounts\templates\login.html:34
+msgid "Forgot your password?"
+msgstr "نسيت كلمة المرور"
+
+#: .\accounts\templates\my_account_change_done.html:10
+#: .\accounts\templates\password_change_done.html:11
+msgid "Success!"
+msgstr "بنجاح"
+
+#: .\accounts\templates\my_account_change_done.html:10
+msgid "Your account details has been changed!"
+msgstr "تم تغيير بياناتك "
+
+#: .\accounts\templates\my_account_change_done.html:12
+#: .\accounts\templates\password_change_done.html:13
+msgid "Return to home page"
+msgstr "العودة إلى الصفحة الرئيسية"
+
+#: .\accounts\templates\password_change_done.html:11
+msgid "Your password has been changed!"
+msgstr "تم تغيير كلمة المرور"
+
+#: .\accounts\templates\password_reset.html:10
+#: .\accounts\templates\password_reset_confirm.html:17
+#: .\accounts\templates\password_reset_done.html:10
+msgid "Reset your password"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: .\accounts\templates\password_reset.html:11
+msgid ""
+"Enter your email address and we will send you a link to reset your password."
+msgstr "أدخل عنوان بريدك الإلكتروني وسوف نرسل لك رابط لإعادة تعيين كلمة المرور"
+
+#: .\accounts\templates\password_reset.html:15
+msgid "Send password reset email"
+msgstr "أرسل إيميل إعادة التعيين"
+
+#: .\accounts\templates\password_reset_complete.html:11
+msgid "Password changed!"
+msgstr "تم تغيير كلمة المرور"
+
+#: .\accounts\templates\password_reset_complete.html:13
+msgid ""
+"You have successfully changed your password! You may now proceed to log in."
+msgstr "نجحت في تغيير كلمة المرور ويمكنك الآن تسجيل الدخول"
+
+#: .\accounts\templates\password_reset_complete.html:15
+#: .\accounts\templates\password_reset_done.html:12
+msgid "Return to log in"
+msgstr "العودة إلى تسجيل الدخول"
+
+#: .\accounts\templates\password_reset_confirm.html:10
+msgid "Change password for @"
+msgstr "تسجيل الدخول لـ"
+
+#: .\accounts\templates\password_reset_confirm.html:14
+msgid "Change password"
+msgstr "تغيير كلمة المرور"
+
+#: .\accounts\templates\password_reset_confirm.html:19
+msgid ""
+"It looks like you clicked on an invalid password reset link. Please try "
+"again."
+msgstr ""
+" . يبدو كأنك استخدمت رابط خاطئ لإعادة تعيين كلمة المرور.الرجاة إعادة "
+"المحاولة مرة أخرى"
+
+#: .\accounts\templates\password_reset_confirm.html:21
+msgid "Request a new password reset link"
+msgstr "طلب رابط إعادة تعيين كلمة مرور جديد"
+
+#: .\accounts\templates\password_reset_done.html:11
+msgid "Check your email for a link to reset your password.If it doesn"
+msgstr "تفحص ايميلك للحصول على رابط اعادة تعيين كلمة المرور"
+
+#: .\accounts\templates\profile.html:13
+msgid "This is the details for your profile"
+msgstr "هذه تفاصيل ملفك الشخصي "
+
+#: .\accounts\templates\profile.html:32
+#: .\auto_roof\templates\auto_roof\auto_roof_detail.html:37
+#: .\driver\templates\driver\driver_detail.html:37
+#: .\driver\templates\driver\driver_list.html:58
+#: .\mechanic\templates\mechanic\mechanic_detail.html:37
+#: .\mechanic\templates\mechanic\mechanic_list.html:57
+#: .\old_parts\templates\old_parts\old_parts_detail.html:37
+#: .\old_parts\templates\old_parts\old_parts_list.html:58
+#: .\spare_parts\templates\spare_parts\spare_parts_detail.html:37
+#: .\spare_parts\templates\spare_parts\spare_parts_list.html:58
+msgid "No image"
+msgstr "لايوجد صورة"
+
+#: .\accounts\templates\profile.html:52
+msgid "Edit Profile"
+msgstr " تعديل ملفك"
+
+#: .\accounts\templates\profile.html:53
+msgid "Change Password"
+msgstr "تغيير كلمة المرور"
+
+#: .\accounts\templates\signup.html:25
+msgid "Creat An account"
+msgstr "إنشاء الحساب"
+
+#: .\accounts\templates\signup.html:29
+msgid "Already have an account?"
+msgstr "لدي حساب "
+
+#: .\accounts\templates\signup.html:29 .\templates\base.html:111
+msgid "Log in"
+msgstr "الدخول"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_add.html:11
+#: .\driver\templates\driver\driver_add.html:11
+#: .\mechanic\templates\mechanic\mechanic_add.html:11
+#: .\old_parts\templates\old_parts\old_parts_add.html:11
+#: .\spare_parts\templates\spare_parts\spare_parts_add.html:11
+msgid "Save"
+msgstr "حفظ"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_delete.html:11
+msgid "Do you want to delete the auto_roof"
+msgstr "هل ترغب بحذف السطحة"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_delete.html:12
+#: .\driver\templates\driver\driver_delete.html:12
+msgid "Yes "
+msgstr "نعم"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_delete.html:13
+#: .\driver\templates\driver\driver_delete.html:13
+#: .\mechanic\templates\mechanic\mechanic_delete.html:13
+#: .\old_parts\templates\old_parts\old_parts_delete.html:13
+#: .\spare_parts\templates\spare_parts\spare_parts_delete.html:13
+msgid "Cancel"
+msgstr "إلفاء"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_detail.html:16
+msgid "This is the details for this auto_roof"
+msgstr "هذه بيانات سائق السطحة"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_detail.html:57
+#: .\driver\templates\driver\driver_detail.html:57
+#: .\mechanic\templates\mechanic\mechanic_detail.html:57
+#: .\old_parts\templates\old_parts\old_parts_detail.html:57
+#: .\spare_parts\templates\spare_parts\spare_parts_detail.html:57
+msgid "Update"
+msgstr "تحديث"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_detail.html:58
+#: .\driver\templates\driver\driver_detail.html:58
+#: .\mechanic\templates\mechanic\mechanic_detail.html:58
+#: .\old_parts\templates\old_parts\old_parts_detail.html:58
+#: .\spare_parts\templates\spare_parts\spare_parts_detail.html:58
+msgid "Delete"
+msgstr "حذف"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_list.html:24
+#: .\driver\templates\driver\driver_list.html:24
+#: .\mechanic\templates\mechanic\mechanic_list.html:24
+#: .\old_parts\templates\old_parts\old_parts_list.html:24
+#: .\spare_parts\templates\spare_parts\spare_parts_list.html:24
+msgid "Search"
+msgstr "بحث"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_list.html:32
+msgid "Our Auto_Roof"
+msgstr "السطحات"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_list.html:33
+msgid "Select the Auto-Roof to show the details"
+msgstr "اختار السطحة ليتم عرض بياناتها"
+
+#: .\auto_roof\templates\auto_roof\auto_roof_list.html:35
+msgid "Add new auto_roof"
+msgstr "إضافة سطحة جديدة"
+
+#: .\contact\templates\contact\contact.html:19
+#: .\service\templates\service\service_list.html:18 .\templates\base.html:89
+msgid "Home"
+msgstr "الرئيسية"
+
+#: .\contact\templates\contact\contact.html:20 .\templates\base.html:100
+msgid "Contact"
+msgstr "اتصل بنا"
+
+#: .\contact\templates\contact\contact.html:36
+msgid "Get in Touch"
+msgstr "ابقى على اتصال"
+
+#: .\contact\templates\contact\contact.html:64
+msgid "Send"
+msgstr "أرسل"
+
+#: .\contact\templates\contact\contact.html:73
+msgid "Alkobar, 34751"
+msgstr "الخبر , 34751"
+
+#: .\contact\templates\contact\contact.html:80
+msgid "sat to thu 9am to 6pm"
+msgstr "السبت إلى الخميس 9 ص إلى 6 م"
+
+#: .\contact\templates\contact\contact.html:87
+msgid "Send us your query anytime!"
+msgstr "أرسل لنا استفسارك في أي وقت"
+
+#: .\driver\templates\driver\driver_delete.html:11
+msgid "Do you want to delete the driver"
+msgstr "هل ترغب بحذف السائق"
+
+#: .\driver\templates\driver\driver_detail.html:16
+msgid "This is the details for this driver"
+msgstr "هذه بيانات هذا السائق"
+
+#: .\driver\templates\driver\driver_list.html:32
+msgid "Our Driver"
+msgstr "السائقون"
+
+#: .\driver\templates\driver\driver_list.html:33
+msgid "Select the driver to show the details"
+msgstr "اختر السائق لعرض بياناته"
+
+#: .\driver\templates\driver\driver_list.html:35
+msgid "Add new driver"
+msgstr "إضاقة سائق جديد"
+
+#: .\mechanic\templates\mechanic\mechanic_delete.html:11
+msgid "Do you want to delete the mechanic"
+msgstr "هل ترغب في حذف هذا الميكانيكي"
+
+#: .\mechanic\templates\mechanic\mechanic_delete.html:12
+#: .\old_parts\templates\old_parts\old_parts_delete.html:12
+#: .\spare_parts\templates\spare_parts\spare_parts_delete.html:12
+msgid "Yes"
+msgstr "نعم"
+
+#: .\mechanic\templates\mechanic\mechanic_detail.html:16
+msgid "This is the details for this mechanic"
+msgstr "هذه بيانات هذا الميكانيكي"
+
+#: .\mechanic\templates\mechanic\mechanic_list.html:33
+msgid "Our Mechanic"
+msgstr "الميكانيكيون"
+
+#: .\mechanic\templates\mechanic\mechanic_list.html:34
+msgid "Select the mechanic to show the details"
+msgstr "اختر الميكانيكي ليتم عرض بياناته"
+
+#: .\mechanic\templates\mechanic\mechanic_list.html:36
+msgid "Add new mechanic"
+msgstr "إضافة ميكانيكي جديد"
+
+#: .\old_parts\templates\old_parts\old_parts_delete.html:11
+msgid "Do you want to delete the old-parts"
+msgstr "هل ترغب بحذف التشليح"
+
+#: .\old_parts\templates\old_parts\old_parts_detail.html:16
+msgid "This is the details for this Old-Parts"
+msgstr "هذه بيانات هذا التشليح"
+
+#: .\old_parts\templates\old_parts\old_parts_list.html:32
+msgid "Our Old_Parts"
+msgstr "التشاليح"
+
+#: .\old_parts\templates\old_parts\old_parts_list.html:33
+msgid "Select the Old-Parts to show the details"
+msgstr "اختر التشليح لعرض بياناته"
+
+#: .\old_parts\templates\old_parts\old_parts_list.html:35
+msgid "Add new old_parts"
+msgstr "إضافة تشليح جديد"
+
+#: .\project\settings.py:132
+msgid "Afrikaans"
+msgstr "افريقي"
+
+#: .\project\settings.py:133
+msgid "Arabic"
+msgstr "عربي"
+
+#: .\project\settings.py:134
+msgid "Algerian Arabic"
+msgstr "عربية جزائرية"
+
+#: .\project\settings.py:135
+msgid "Asturian"
+msgstr "استونيا"
+
+#: .\project\settings.py:136
+msgid "Azerbaijani"
+msgstr "اذريبجان"
+
+#: .\project\settings.py:137
+msgid "Bulgarian"
+msgstr "بلفاريا"
+
+#: .\project\settings.py:138
+msgid "Belarusian"
+msgstr "بيلاروسيا"
+
+#: .\project\settings.py:139
+msgid "Bengali"
+msgstr "بنغالي"
+
+#: .\project\settings.py:140
+msgid "Breton"
+msgstr "بريتون"
+
+#: .\project\settings.py:141
+msgid "Bosnian"
+msgstr "البوسنة"
+
+#: .\project\settings.py:142
+msgid "Catalan"
+msgstr "كاتالان"
+
+#: .\project\settings.py:143
+msgid "Czech"
+msgstr "التشيك"
+
+#: .\project\settings.py:144
+msgid "Welsh"
+msgstr "ويلز"
+
+#: .\project\settings.py:145
+msgid "Danish"
+msgstr "دانيش"
+
+#: .\project\settings.py:146
+msgid "German"
+msgstr "ألماني"
+
+#: .\project\settings.py:147
+msgid "Lower Sorbian"
+msgstr "صربي"
+
+#: .\project\settings.py:148
+msgid "Greek"
+msgstr "يوناني"
+
+#: .\project\settings.py:149
+msgid "English"
+msgstr "انجليزي"
+
+#: .\project\settings.py:150
+msgid "Australian English"
+msgstr "انجليزي استرالي"
+
+#: .\project\settings.py:151
+msgid "British English"
+msgstr "انجليزي بريطاني"
+
+#: .\project\settings.py:152
+msgid "Esperanto"
+msgstr "اسبرانتو"
+
+#: .\project\settings.py:153
+msgid "Spanish"
+msgstr "اسباني"
+
+#: .\project\settings.py:154
+msgid "Argentinian Spanish"
+msgstr "اسباني ارجنتيني"
+
+#: .\project\settings.py:155
+msgid "Colombian Spanish"
+msgstr "اسباني كولومبي"
+
+#: .\project\settings.py:156
+msgid "Mexican Spanish"
+msgstr "اسباني مكسيكي"
+
+#: .\project\settings.py:157
+msgid "Nicaraguan Spanish"
+msgstr "اسباني نيكاراجوان"
+
+#: .\project\settings.py:158
+msgid "Venezuelan Spanish"
+msgstr "اسباني فنزويلي"
+
+#: .\project\settings.py:159
+msgid "Estonian"
+msgstr "استوني"
+
+#: .\project\settings.py:160
+msgid "Basque"
+msgstr "باسكي"
+
+#: .\project\settings.py:161
+msgid "Persian"
+msgstr "فارسي"
+
+#: .\project\settings.py:162
+msgid "Finnish"
+msgstr "فنش"
+
+#: .\project\settings.py:163
+msgid "French"
+msgstr "فرنسي"
+
+#: .\project\settings.py:164
+msgid "Frisian"
+msgstr "فريسيان"
+
+#: .\project\settings.py:165
+msgid "Irish"
+msgstr "ايرلندي"
+
+#: .\project\settings.py:166
+msgid "Scottish Gaelic"
+msgstr "اسكتلندي"
+
+#: .\project\settings.py:167
+msgid "Galician"
+msgstr "جاليشيان"
+
+#: .\project\settings.py:168
+msgid "Hebrew"
+msgstr "هيبرو"
+
+#: .\project\settings.py:169
+msgid "Hindi"
+msgstr "هندي"
+
+#: .\project\settings.py:170
+msgid "Croatian"
+msgstr "كرواتي"
+
+#: .\project\settings.py:171
+msgid "Upper Sorbian"
+msgstr "صريي "
+
+#: .\project\settings.py:172
+msgid "Hungarian"
+msgstr "هنغاري"
+
+#: .\project\settings.py:173
+msgid "Armenian"
+msgstr "ارميني"
+
+#: .\project\settings.py:174
+msgid "Interlingua"
+msgstr "انترلنغوا"
+
+#: .\project\settings.py:175
+msgid "Indonesian"
+msgstr "اندونيسي"
+
+#: .\project\settings.py:176
+msgid "Igbo"
+msgstr "اكبو"
+
+#: .\project\settings.py:177
+msgid "Ido"
+msgstr "ايدو"
+
+#: .\project\settings.py:178
+msgid "Icelandic"
+msgstr "ايسلندي"
+
+#: .\project\settings.py:179
+msgid "Italian"
+msgstr "ايطالي"
+
+#: .\project\settings.py:180
+msgid "Japanese"
+msgstr "ياباني"
+
+#: .\project\settings.py:181
+msgid "Georgian"
+msgstr "جورجي"
+
+#: .\project\settings.py:182
+msgid "Kabyle"
+msgstr "كابيلي"
+
+#: .\project\settings.py:183
+msgid "Kazakh"
+msgstr "كازاخستاني"
+
+#: .\project\settings.py:184
+msgid "Khmer"
+msgstr "كشميري"
+
+#: .\project\settings.py:185
+msgid "Kannada"
+msgstr "كندي"
+
+#: .\project\settings.py:186
+msgid "Korean"
+msgstr "كوري"
+
+#: .\project\settings.py:187
+msgid "Kyrgyz"
+msgstr "كيرجز"
+
+#: .\project\settings.py:188
+msgid "Luxembourgish"
+msgstr "لوكسمبورغ"
+
+#: .\project\settings.py:189
+msgid "Lithuanian"
+msgstr "ليتواني"
+
+#: .\project\settings.py:190
+msgid "Latvian"
+msgstr "لاتفي"
+
+#: .\project\settings.py:191
+msgid "Macedonian"
+msgstr "مقدوني"
+
+#: .\project\settings.py:192
+msgid "Malayalam"
+msgstr "مالاوي"
+
+#: .\project\settings.py:193
+msgid "Mongolian"
+msgstr "منغولي"
+
+#: .\project\settings.py:194
+msgid "Marathi"
+msgstr "مارثثي"
+
+#: .\project\settings.py:195
+msgid "Burmese"
+msgstr "بورمي"
+
+#: .\project\settings.py:196
+msgid "Norwegian Bokmål"
+msgstr "نرويجي"
+
+#: .\project\settings.py:197
+msgid "Nepali"
+msgstr "نيبالي"
+
+#: .\project\settings.py:198
+msgid "Dutch"
+msgstr "دوتشي"
+
+#: .\project\settings.py:199
+msgid "Norwegian Nynorsk"
+msgstr "نرويجي"
+
+#: .\project\settings.py:200
+msgid "Ossetic"
+msgstr "اوستيك"
+
+#: .\project\settings.py:201
+msgid "Punjabi"
+msgstr "بنجابس"
+
+#: .\project\settings.py:202
+msgid "Polish"
+msgstr "بوليش"
+
+#: .\project\settings.py:203
+msgid "Portuguese"
+msgstr "برتغالي"
+
+#: .\project\settings.py:204
+msgid "Brazilian Portuguese"
+msgstr "برتغالي برازيلي"
+
+#: .\project\settings.py:205
+msgid "Romanian"
+msgstr "روماني"
+
+#: .\project\settings.py:206
+msgid "Russian"
+msgstr "روسي"
+
+#: .\project\settings.py:207
+msgid "Slovak"
+msgstr "سولوفاكي"
+
+#: .\project\settings.py:208
+msgid "Slovenian"
+msgstr "سولوفيني"
+
+#: .\project\settings.py:209
+msgid "Albanian"
+msgstr "الباني"
+
+#: .\project\settings.py:210
+msgid "Serbian"
+msgstr "صربي"
+
+#: .\project\settings.py:211
+msgid "Serbian Latin"
+msgstr "لاتيني صربي"
+
+#: .\project\settings.py:212
+msgid "Swedish"
+msgstr "سويدي"
+
+#: .\project\settings.py:213
+msgid "Swahili"
+msgstr "سواحلي"
+
+#: .\project\settings.py:214
+msgid "Tamil"
+msgstr "تاميل"
+
+#: .\project\settings.py:215
+msgid "Telugu"
+msgstr "تيلغو"
+
+#: .\project\settings.py:216
+msgid "Tajik"
+msgstr "طاجيكي"
+
+#: .\project\settings.py:217
+msgid "Thai"
+msgstr "تاي"
+
+#: .\project\settings.py:218
+msgid "Turkmen"
+msgstr "تركماني"
+
+#: .\project\settings.py:219
+msgid "Turkish"
+msgstr "تركي"
+
+#: .\project\settings.py:220
+msgid "Tatar"
+msgstr "تتاري"
+
+#: .\project\settings.py:221
+msgid "Udmurt"
+msgstr "يودمرت"
+
+#: .\project\settings.py:222
+msgid "Ukrainian"
+msgstr "اوكراني"
+
+#: .\project\settings.py:223
+msgid "Urdu"
+msgstr "اوردو"
+
+#: .\project\settings.py:224
+msgid "Uzbek"
+msgstr "اوزبكي"
+
+#: .\project\settings.py:225
+msgid "Vietnamese"
+msgstr "فيتنامي"
+
+#: .\project\settings.py:226
+msgid "Simplified Chinese"
+msgstr "صيني بسيط"
+
+#: .\project\settings.py:227
+msgid "Traditional Chinese"
+msgstr "صيني شعبي"
+
+#: .\service\templates\service\service_list.html:19
+#: .\service\templates\service\service_list.html:36
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#: .\service\templates\service\service_list.html:37
+msgid "What We Can Do For You"
+msgstr "ماذا نستطيع أن نقدم من أجلك ؟"
+
+#: .\service\templates\service\service_list.html:48 .\templates\base.html:92
+msgid "Mechanic"
+msgstr "ميكانيكي"
+
+#: .\service\templates\service\service_list.html:49
+#: .\service\templates\service\service_list.html:60
+#: .\service\templates\service\service_list.html:71
+#: .\service\templates\service\service_list.html:82
+#: .\service\templates\service\service_list.html:93
+msgid ""
+"The sea freight service has grown conside rably in recent years. We spend "
+"timetting to know your processes to."
+msgstr ""
+"ستجد هنا جميع الميكانيكيون المسجلين في الموقع من قبل الأعضاء كل ماعليك هو "
+"الاختيار "
+
+#: .\service\templates\service\service_list.html:59 .\templates\base.html:93
+msgid "Driver"
+msgstr "سائق"
+
+#: .\service\templates\service\service_list.html:70 .\templates\base.html:94
+msgid "Auto Roof"
+msgstr "صطحة"
+
+#: .\service\templates\service\service_list.html:81 .\templates\base.html:95
+msgid "Spare Parts"
+msgstr "قطع غيار"
+
+#: .\service\templates\service\service_list.html:92 .\templates\base.html:96
+msgid "Old Parts"
+msgstr "تشليح"
+
+#: .\spare_parts\templates\spare_parts\spare_parts_delete.html:11
+msgid "Do you want to delete the spare-parts"
+msgstr "هل ترغب بحذف قطع الغيار "
+
+#: .\spare_parts\templates\spare_parts\spare_parts_detail.html:16
+msgid "This is the details for this Spare-Parts"
+msgstr "هذه بيانات لقطع الغيار هذه"
+
+#: .\spare_parts\templates\spare_parts\spare_parts_list.html:32
+msgid "Our Spare_Parts"
+msgstr "قطع الغيار"
+
+#: .\spare_parts\templates\spare_parts\spare_parts_list.html:33
+msgid "Select the Spare-Parts to show the details"
+msgstr "اختر قطع الغيار ليتم عرض بياناتها"
+
+#: .\spare_parts\templates\spare_parts\spare_parts_list.html:35
+msgid "Add new spare_parts"
+msgstr "إضافة قطع غيار جديدة"
+
+#: .\templates\base.html:90
+msgid "Services"
+msgstr "الخدمات"
+
+#: .\templates\base.html:105
+msgid "My Profile"
+msgstr "ملفي الشخصي"
+
+#: .\templates\base.html:106
+msgid "Log out"
+msgstr "خروج"

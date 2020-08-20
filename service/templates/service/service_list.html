@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <main>
+        <!--? slider Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{% static 'assets/img/hero/h1_hero.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap">
+                                <h2>{% trans 'My Truck' %}</h2>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="{% url 'service:index'  %}"  id="text-ar4">{% trans 'Home' %}</a></li>
+                                        <li class="breadcrumb-item"><a href="#">{% trans 'Our Services' %}</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!--? Categories Area Start -->
+        <div class="categories-area section-padding20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-30">
+                            <span>{% trans 'Our Services' %}</span>
+                            <h2>{% trans 'What We Can Do For You' %}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-shipped"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url 'mechanic:mechanic_list' %}"  id="text-ar3">{% trans 'Mechanic' %} </a></h5>
+                                <p>{% trans 'The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-shipped"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url 'driver:driver_list' %}"> {% trans 'Driver' %}</a></h5>
+                                <p>{% trans 'The Driver service has grown conside rably in recent years. We spend timetting to know your processes to.' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-ship"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url 'auto_roof:auto_roof_list' %}">{% trans 'Auto Roof' %}</a></h5>
+                                <p>{% trans 'The sea auto_roof service has grown conside rably in recent years. We spend timetting to know your processes to.' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-plane"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url 'spare_parts:spare_parts_list' %}">{% trans 'Spare Parts' %}</a></h5>
+                                <p>{% trans 'The spare_parts service has grown conside rably in recent years. We spend timetting to know your processes to.' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-plane"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="{% url 'old_parts:old_parts_list' %}">{% trans 'Old Parts' %}</a></h5>
+                                <p>{% trans 'The old_parts service has grown conside rably in recent years. We spend timetting to know your processes to.' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Categories Area End -->
+       
+    </main>
+   
+ {% endblock  %}      
+                

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% load i18n %}
+
+{% block body %}
+<div class="container categories-area section-padding20">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Section Tittle -->
+                                <div class="section-tittle text-center mb-30">
+                                    <span>{{profile}}</span>
+                                    <h2>{% trans 'This is the details for your profile' %}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-12 col-md-6 col-sm-6">
+                                <div class="single-cat text-center mb-50">
+                                    <div class="cat-icon">
+                                        <span class="flaticon-plane"></span>
+                                    </div>
+                                    <div class="cat-cap">  
+                        
+                                        <div class="single-blog col-lg-12 col-md-">
+                                                    
+                                            
+                                            {% if profile.image %}
+                                                 {% thumbnail profile.image "300x400" crop="center" as im %}
+                                                    <img class="f-img img-fluid mx-auto" src="{{ im.url}}" width="{{ im.width }}" height="{{ im.height }}">
+                                                 {% empty %}
+                                                    <p>{% trans 'No image' %}</p>
+                                                 {% endthumbnail %}
+                                            {% else %}
+                                                <img class="f-img img-fluid mx-auto" src="{% static 'assest/img/logo/logo.png' %} " alt="">
+                                            {% endif %}
+                                            
+                                                <h4>
+                                                    {{profile.bio}}  
+                                                </h4>
+                                                <h4>
+                                                    {{profile.join_date}}
+                                                </h4>
+                                                <h4>
+                                                    {{profile.city}}
+                                                </h4>
+                                                
+                                                
+                                        </div>
+                                            {% if user.is_authenticated  %}
+                                            <h4>
+                                                <button type="submit" class="btn header-btn"><a href="{% url 'accounts:edit_profile' %}">{% trans 'Edit Profile' %}</a></button>
+                                                <button type="submit" class="btn header-btn"><a href="{% url 'accounts:change_password'  %}">{% trans 'Change Password' %} </a></button>
+                                                
+                                            </h4>
+                                            {% endif %}        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{% endblock  %}
